@@ -1,0 +1,13 @@
+{
+  "name": "landing-skeleton",
+  "version": "1.0.0",
+  "description": "Light HTML5 Landing Page Skeleton with Materialize Framework",
+  "repository": "git@github.com:diegodisant/landing-skeleton.git",
+  "author": "diegodisant <diego.desantiago@linio.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "minify": "^8.0.3",
+    "sass": "^1.49.0"
+  }
+}
