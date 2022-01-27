@@ -19,6 +19,6 @@
     "apphtml:minify": "./node_modules/.bin/minify ./index.html > ./index.min.html",
     "mcss:all": "yarn mcss:build && yarn mcss:minify",
     "appcss:all": "yarn appcss:build && yarn appcss:minify",
-    "build:all": "yarn mcss:all && yarn appcss:all && yarn appjs:minify && yarn apphtml:minify"
+    "app:build": "yarn mcss:all && yarn appcss:all && yarn appjs:minify && yarn apphtml:minify"
   }
 }
