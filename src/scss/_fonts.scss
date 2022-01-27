@@ -1,0 +1,14 @@
+.heading-font {
+  font-family: 'Audiowide', normal !important;
+}
+
+.text-font {
+  font-family: 'PT Sans', normal !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .heading-font;
+
+  text-transform: uppercase;
+}

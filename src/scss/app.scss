@@ -1,3 +1,64 @@
 @import 'fonts';
 @import 'colors';
 @import 'materialize-override';
+
+body, .main-nav {
+  @extend .primary-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .secondary-text;
+}
+
+nav.main-nav {
+  & {
+    @extend .heading-font;
+
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  li > a:hover {
+    @extend .red-text;
+  }
+}
+
+
+p {
+  & {
+    @extend .text-font;
+    @extend .secondary-text;
+
+    text-align: justify;
+  }
+
+  & > b {
+    @extend .red-text;
+  }
+}
+
+.inverted-section {
+  & {
+    @extend .secondary-background;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .primary-text;
+  }
+
+  p {
+    & {
+      @extend .grey-text;
+    }
+  }
+}
+
+.steps {
+  h5, h6 {
+    text-transform: lowercase !important;
+  }
+}
+
+.rounded-button {
+  border-radius: 30px !important;
+}

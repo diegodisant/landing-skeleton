@@ -10,12 +10,6 @@ const FLOAT_BUTTON_OPTIONS = {
   toolbarEnabled: false,
 };
 
-const TABS_CLASS = '.tabs';
-const TABS_OPTIONS = {
-  duration: 300,
-  swipeable: true,
-};
-
 document.addEventListener(WINDOW_LOADED_EVENT, function() {
   /** Parallax */
   const parallaxElements = document.querySelectorAll(PARALLAX_CLASS);
@@ -31,13 +25,5 @@ document.addEventListener(WINDOW_LOADED_EVENT, function() {
   M.FloatingActionButton.init(
     floatButtonElements,
     FLOAT_BUTTON_OPTIONS
-  );
-
-  /** Tabs */
-  const tabElements = document.querySelectorAll(TABS_CLASS);
-
-  M.Tabs.init(
-    tabElements,
-    TABS_OPTIONS
   );
 });
