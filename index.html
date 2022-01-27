@@ -5,14 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="./assets/min/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/min/css/app.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- FONTS -->
+    <!-- CUSTOM FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=PT+Sans&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./assets/min/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/min/css/app.min.css">
 </head>
 <body>
+  <nav class="main-nav">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo center">Landing Skeleton</a>
+
+        <ul id="nav-mobile" class="hide-on-med-and-down right">
+          <li><a href="https://github.com/diegodisant/landing-skeleton" target="_blank">github</a></li>
+          <li><a href="https://www.linkedin.com/in/diegodesantiago" target="_blank">linkedin</a></li>
+          <li><a href="https://github.com/diegodisant" target="_blank">author</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./assets/img/banners/main.jpg" alt="main banner">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center">how to setup</h1>
+      </div>
+      <div class="col s12 steps center">
+        <h5 class="center red-text">yarn app:build</h5>
+        <h6 class="center orange-text">open index.min.html</h6>
+        <br>
+        <a href="https://github.com/diegodisant/landing-skeleton/blob/main/README.md" class="btn btn-large blue darken-3 waves-effect waves-light rounded-button" target="_blank">Docs <i class="material-icons right">explore</i></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12 description">
+          <h5 class="white-text">landing skeleton</h5>
+          <p class="grey-text text-lighten-4">Light HTML5 Landing Page Skeleton with Materialize Framework</p>
+          <img class="qr-code" src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPmhccs3Lw%252FIXovsFwPYmMSDOWQqN5Bdu1ikhgi187naW%252BURQzT93zXSKg3te9xzhFAJQ5Qg%252BFYm42GPhqMjOwZJXVocVfKcuevGQR6dr%252B3JwKml%252FT%252BcOZO2KfqV8RGcfvzFmGgBHIGKCFmJeH0CZAp8%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJspe45qimPWB88RRmzBUidxjR%252B%252BFA5Wi8X4by7zVkGafSQ%253D%253D' alt='QR Code'/>
+        </div>
+        <div class="col l4 offset-l2 s12 links">
+          <h5 class="white-text">enlaces</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/diegodisant/landing-skeleton">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/diegodesantiago">Linkedin</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/diegodisant">Author</a></li>
+            <li><a class="grey-text text-lighten-3" href="email:me@diegodisant.tech">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <b class="white-text">YOUR COPYRIGHT</b>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <a class="red-text text-darken-3 left" href="#">Made by You</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="./assets/min/js/materialize.min.js"></script>
   <script src="./assets/min/js/app.min.js"></script>
 </body>
