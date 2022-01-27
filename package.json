@@ -9,5 +9,16 @@
   "devDependencies": {
     "minify": "^8.0.3",
     "sass": "^1.49.0"
+  },
+  "scripts": {
+    "mcss:build": "./node_modules/.bin/sass ./assets/materialize/sass/materialize.scss ./assets/css/materialize.css",
+    "mcss:minify": "./node_modules/.bin/minify ./assets/css/materialize.css > ./assets/min/css/materialize.min.css",
+    "appcss:build": "./node_modules/.bin/sass ./src/scss/app.scss ./assets/css/app.css",
+    "appcss:minify": "./node_modules/.bin/minify ./assets/css/app.css > ./assets/min/css/app.min.css",
+    "appjs:minify": "./node_modules/.bin/minify ./src/js/app.js > ./assets/min/js/app.min.js",
+    "apphtml:minify": "./node_modules/.bin/minify ./index.html > ./index.min.html",
+    "mcss:all": "yarn mcss:build && yarn mcss:minify",
+    "appcss:all": "yarn appcss:build && yarn appcss:minify",
+    "build:all": "yarn mcss:all && yarn appcss:all && yarn appjs:minify && yarn apphtml:minify"
   }
 }
