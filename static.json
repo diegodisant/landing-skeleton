@@ -1,0 +1,11 @@
+{
+  "root": "./",
+  "canonical_host": "${APP_HOST}",
+  "encoding": "UTF-8",
+  "clean_urls": true,
+  "https_only": true,
+  "routes": {
+    "/**": "index.min.html",
+    "/assets/*": "/assets/"
+  }
+}
