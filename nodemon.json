@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "node_modules",
+    "infra",
+    "assets",
+    "index.min.html"
+  ],
+  "events": {
+    "start": "yarn mcss:all && yarn appcss:all && yarn appjs:minify"
+  },
+  "watch": [
+    "src/",
+    "index.html"
+  ],
+  "ext": "js,scss"
+}
