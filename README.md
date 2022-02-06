@@ -25,6 +25,7 @@ appcss:all|builds and minify the generated CSS for your landing page
 appjs:minify|minify the landing page application scripts
 apphtml:minify|minify the index.html file
 app:build|build and minify all landing page assets like JS, SASS, HTML
+app:watch|watch all project files like scripts, sass, and html files
 
 ## Deployment Heroku
 
