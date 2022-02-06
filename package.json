@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "livereload": "^0.9.3",
     "minify": "^8.0.3",
     "nodemon": "^2.0.15",
     "sass": "^1.49.0"
@@ -22,7 +21,6 @@
     "mcss:all": "yarn mcss:build && yarn mcss:minify",
     "appcss:all": "yarn appcss:build && yarn appcss:minify",
     "app:build": "yarn mcss:all && yarn appcss:all && yarn appjs:minify && yarn apphtml:minify",
-    "app:watch": "./node_modules/.bin/nodemon --exec 'yarn apphtml:minify'",
-    "app:livereload": "./node_modules/.bin/livereload -d -p 9000 -e 'js,css,html' -x 'infra/, node_modules, src, assets/img' -f index.min.html ."
+    "app:watch": "./node_modules/.bin/nodemon --exec 'yarn apphtml:minify'"
   }
 }
