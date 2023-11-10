@@ -26,24 +26,3 @@ appjs:minify|minify the landing page application scripts
 apphtml:minify|minify the index.html file
 app:build|build and minify all landing page assets like JS, SASS, HTML
 app:watch|watch all project files like scripts, sass, and html files
-
-## Deployment Heroku
-
-`cp .env.dist .env`
-
-**Important: Set your app name in `.env` file, and modify the variable `HEROKU_APP=my-app-name`**
-
-Autoconfig heroku with exec the following commands:
-
-```bash
-cd infra/heroku
-
-./config
-```
-
-> Note: Deploys MUST do after pushing your changes into your main branch
-
-**And then do a manual deploy for your application:** `./deploy.sh`
-
-
-**Written by:** [@diegodisant](https://github.com/diegodisant)

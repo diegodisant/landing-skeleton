@@ -3,7 +3,6 @@
   "ignore": [
     ".git",
     "node_modules",
-    "infra",
     "assets",
     "index.min.html"
   ],
